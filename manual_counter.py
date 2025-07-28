@@ -36,6 +36,8 @@ def main():
             conf = box.conf[0]
             label = model.names[int(box.cls[0])]
             detections = np.vstack((detections, np.array([x1, y1, x2, y2, conf])))
+            cv2.putText(frame, f"{label}: {conf:.2f}", (x1, y1-5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 2)
+            cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 0, 0), 2)
             
 
         output = tracker.update(detections)
@@ -45,8 +47,6 @@ def main():
             cx, cy = int((x1 + x2) / 2), int((y1 + y2) / 2)
             if line[1] < cy < line[3] and line[0]-20 < cx < line[0]+20:
                 CountedIDs.add(track_id)
-            cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 0, 0), 2)
-            cv2.putText(frame, f"{label}: {conf:.2f}", (x1, y1), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 2)
                 
 
         cv2.putText(frame, f"Counted IDs: {len(CountedIDs)}", (10, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
