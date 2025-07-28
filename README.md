@@ -6,8 +6,8 @@ This project is a real-time potato counting system built using:
 - The **SORT** algorithm to track detected potatoes
 - A counting mechanism that increments when tracked potatoes cross a defined virtual line, ensuirng no duplicates counts occure
 
+<img width="1356" height="699" alt="image" src="https://github.com/user-attachments/assets/a46b7752-591f-46ee-ab1f-e82210ea9ca3" />
 
-<img width="1357" height="693" alt="image" src="https://github.com/user-attachments/assets/5c3d1804-1ad6-4e60-8c93-43e5d4a3a142" />
 
 
 ## How It Works
