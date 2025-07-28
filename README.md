@@ -10,7 +10,7 @@ This project is a real-time potato counting system built using:
 <img width="1357" height="693" alt="image" src="https://github.com/user-attachments/assets/5c3d1804-1ad6-4e60-8c93-43e5d4a3a142" />
 
 
-## 🚀 How It Works
+## How It Works
 
 1. **Object Detection**  
    A YOLOv11m model is trained on annotated potato images to detect potatoes in each frame.
@@ -24,7 +24,7 @@ This project is a real-time potato counting system built using:
 
 
 
-## ✅️ How to run the project:
+## How to run the project:
 
 1. First install the dependencies
 ```bash
